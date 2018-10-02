@@ -2,7 +2,6 @@
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { Component, DebugElement } from "@angular/core";
 import { By } from "@angular/platform-browser";
-import { TestBed } from '@angular/core/testing';
 import { HoverFocusDirective } from './hoverfocus.directive';
 
 @Component({
