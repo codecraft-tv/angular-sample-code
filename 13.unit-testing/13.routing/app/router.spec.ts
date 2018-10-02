@@ -45,14 +45,14 @@ describe('Router: App', () => {
     }));
 
     it('navigate to "" redirects you to /home', fakeAsync(() => {
-        router.navigate(['']);
-        tick(50);
-        expect(location.path()).toBe('/home');
+        router.navigate(['']).then(() => {
+            expect(location.path()).toBe('/home');
+        });
     }));
 
     it('navigate to "search" takes you to /search', fakeAsync(() => {
-        router.navigate(['/search']);
-        tick(50);
-        expect(location.path()).toBe('/search');
+        router.navigate(['/search']).then(() => {
+            expect(location.path()).toBe('/search');
+        });
     }));
 });
